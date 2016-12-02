@@ -5,6 +5,7 @@ project(gscam)
 # System Dependencies
 find_package(PkgConfig)
 
+option(GSTREAMER_VERSION_1_x "Use gstreamer 1.x" ON)
 if(GSTREAMER_VERSION_1_x)
   message(STATUS "gst 1.0")
   pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)
